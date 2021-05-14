@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="public/email.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"
+    ></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script defer src="public/email.js"></script>
+    <title>Caixa de entrada || ProEmails</title>
+  </head>
+  <body>
+    <div class="Container">
+      <header>
+        <section>
+          <div>
+            <h1>Bem-vindo <strong class="header-name"></strong></h1>
+            <p class="number-emails">Você não possui nenhum e-mail</p>
+          </div>
+          <button id="signout-button">
+            <img src="public/assets/power.svg" alt="Sair" />
+          </button>
+        </section>
+      </header>
+      <section class="emails-container">
+        <div>
+          <h1>Caixa de entrada</h1>
+          <button id="modal-button">Enviar email</button>
+        </div>
+      </section>
+    </div>
+    <div class="modal">
+      <div class="send-email">
+        <form action="" id="send-mail">
+          <h1>Enviar e-mail</h1>
+          <div class="input">
+            <label>E-mail do destinatário</label>
+            <input
+              required
+              type="text"
+              placeholder="Endereço de e-mail do destinatário"
+              class="recipientEmail"
+            />
+          </div>
+          <div class="input">
+            <label>Assunto</label>
+            <input
+              required
+              type="text"
+              placeholder="Assunto do e-mail"
+              class="subject"
+            />
+          </div>
+          <div class="input">
+            <label>Mensagem</label>
+            <textarea
+              required
+              type="text"
+              placeholder="Escreva a mensagem"
+              class="body"
+            ></textarea>
+          </div>
+          <section>
+            <a id="modal-button">Cancelar</a>
+            <button>Enviar</button>
+          </section>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

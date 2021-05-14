@@ -1,0 +1,265 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #343a40;
+  outline: none;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #f5f5f5;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 340px #fff inset !important;
+}
+
+button {
+  height: 64px;
+  border: 0;
+  border-radius: 8px;
+  width: 224px;
+  text-transform: uppercase;
+  background: #721eff;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #fff;
+  cursor: pointer;
+}
+
+header {
+  min-height: 100px;
+  width: 100vw;
+  background: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header > section {
+  width: 1216px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header > section > div {
+  display: flex;
+  flex-direction: column;
+}
+
+header > section > button {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+}
+
+header > section > div > p {
+  font-weight: 500;
+  opacity: 0.6;
+  font-size: 18px;
+}
+
+div.Container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+}
+
+section.emails-container {
+  margin-top: 56px;
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  width: 1216px;
+}
+
+section.emails-container > div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+section.emails-container > div > h1 {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 130%;
+  letter-spacing: -0.04em;
+}
+
+div.email {
+  width: 100%;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  margin: 0 !important;
+}
+
+div.email > section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+div.email > section > div {
+  display: flex;
+  flex-direction: column;
+}
+
+div.email > section > div > h1 {
+  text-transform: capitalize;
+}
+
+div.email > section > div > p {
+  font-weight: 500;
+  opacity: 0.6;
+  font-size: 18px;
+}
+
+div.email > p {
+  margin-top: 16px;
+  font-weight: 500;
+  opacity: 0.8;
+  font-size: 18px;
+  display: none;
+}
+
+div.email + div.email {
+  margin-top: 16px !important;
+}
+
+button#more {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  transition: 0.2s;
+}
+
+button#less {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  transform: rotate(180deg);
+  transition: 0.2s;
+}
+
+div.modal {
+  background: rgba(33, 37, 41, 0.3);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+div.modal > div.send-email {
+  padding: 64px;
+  background: #fff;
+  border-radius: 8px;
+  width: 40%;
+}
+
+div.input {
+  display: flex;
+  flex-direction: column;
+}
+
+div.input > label {
+  font-family: 'Inter';
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  margin-bottom: 8px;
+}
+
+div.input > input {
+  width: 100%;
+  height: 64px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  font-size: 17px;
+  line-height: 24px;
+  padding: 0 24px;
+  transition: border 0.2s;
+}
+
+div.input > textarea {
+  width: 100%;
+  height: 184px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  font-size: 17px;
+  line-height: 24px;
+  padding: 24px;
+  transition: border 0.2s;
+  resize: none;
+}
+
+div.input > textarea:focus,
+div.input > input:focus {
+  border-color: #721eff;
+  box-shadow: 0px 3px 10px rgba(114, 30, 255, 0.1);
+}
+
+div.input > textarea::placeholder,
+div.input > input::placeholder {
+  color: #868e96;
+}
+
+div.input + div.input {
+  margin-top: 32px;
+}
+
+form > h1 {
+  font-family: 'Montserrat';
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 130%;
+  letter-spacing: -0.04em;
+  margin-bottom: 32px;
+}
+
+form > section {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+form > section > a {
+  margin-right: 32px;
+  text-transform: uppercase;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  cursor: pointer;
+}

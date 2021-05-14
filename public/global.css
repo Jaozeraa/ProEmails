@@ -1,0 +1,127 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #343a40;
+  outline: none;
+  font-family: 'Inter', sans-serif;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 340px #fff inset !important;
+}
+
+button {
+  cursor: pointer;
+}
+
+div.Container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e5e5e5;
+}
+
+div.Container > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.Container > div > form {
+  background: #fff;
+  border-radius: 8px;
+  padding: 64px;
+  width: 648px;
+  display: flex;
+  flex-direction: column;
+}
+
+div.Container > div > form > p {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 130%;
+  letter-spacing: 0.12em;
+  color: #868e96;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+div.Container > div > form > h1 {
+  font-family: 'Montserrat';
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 130%;
+  letter-spacing: -0.04em;
+  margin-bottom: 32px;
+}
+
+div.Container > div > form > a {
+  text-decoration: none;
+  align-self: center;
+  margin-top: 24px;
+  transition: 0.2s;
+}
+
+div.Container > div > form > a:hover {
+  color: #721eff;
+}
+
+div.input {
+  display: flex;
+  flex-direction: column;
+}
+
+div.input > label {
+  font-family: 'Inter';
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  margin-bottom: 8px;
+}
+
+div.input > input {
+  width: 100%;
+  height: 64px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  font-size: 17px;
+  line-height: 24px;
+  padding: 0 24px;
+  transition: border 0.2s;
+}
+
+div.input > input:focus {
+  border-color: #721eff;
+  box-shadow: 0px 3px 10px rgba(114, 30, 255, 0.1);
+}
+
+div.input > input::placeholder {
+  color: #868e96;
+}
+
+div.input + div.input {
+  margin-top: 32px;
+}
+
+button {
+  height: 64px;
+  border: 0;
+  border-radius: 8px;
+  width: 100%;
+  text-transform: uppercase;
+  background: #721eff;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #fff;
+  margin-top: 40px;
+}

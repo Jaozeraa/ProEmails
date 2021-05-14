@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastrar || ProEmails</title>
+    <link rel="stylesheet" href="public/global.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="public/cadastrar.js"></script>
+  </head>
+  <body>
+    <div class="Container">
+      <div>
+        <form id="signup-form">
+          <p>Cadastre-se</p>
+          <h1>Crie sua conta gratuita =)</h1>
+          <div class="input">
+            <label>Nome completo</label>
+            <input
+              required
+              type="text"
+              placeholder="Seu nome completo"
+              class="name"
+            />
+          </div>
+          <div class="input">
+            <label>Endereço de e-mail</label>
+            <input
+              required
+              type="text"
+              placeholder="Seu e-mail"
+              class="email"
+            />
+          </div>
+          <div class="input">
+            <label>Senha</label>
+            <input
+              required
+              type="password"
+              placeholder="Digite uma senha de 8 caracteres ou mais"
+              class="password"
+            />
+          </div>
+          <div class="input">
+            <label>Confirmar senha</label>
+            <input
+              required
+              class="confirm_password"
+              type="password"
+              placeholder="Confirme a senha criada"
+            />
+          </div>
+          <button type="submit">Enviar</button>
+          <a href="/"><- Voltar</a>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

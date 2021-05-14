@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login || ProEmails</title>
+    <link rel="stylesheet" href="public/global.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"
+    ></script>
+    <script defer src="public/login.js"></script>
+  </head>
+  <body>
+    <div class="Container">
+      <div>
+        <form id="signin-form">
+          <p>Logar</p>
+          <h1>Bem vindo(a) ao ProEmails</h1>
+          <div class="input">
+            <label>Endereço de e-mail</label>
+            <input type="text" placeholder="Seu e-mail" class="email" />
+          </div>
+          <div class="input">
+            <label>Senha</label>
+            <input
+              type="password"
+              placeholder="Digite uma senha de 8 caracteres ou mais"
+              class="password"
+            />
+          </div>
+          <button>Entrar</button>
+          <a href="/cadastrar.html">Cadastrar-se -></a>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
